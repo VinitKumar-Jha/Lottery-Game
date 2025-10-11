@@ -7,7 +7,7 @@ function genTicket(num){
 }
 
 function sum(arr) {
-    return arr.reduce((sum, val)=> (sum + val, 0)
+    return arr.reduce((sum, val)=> sum + val, 0
      )        
 }
 
