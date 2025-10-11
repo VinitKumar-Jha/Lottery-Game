@@ -14,6 +14,7 @@ export default function Lottery() {
                 <span>{tickets[1]}</span>
                 <span>{tickets[2]}</span>
             </div>
+            
             <h3>{isWinning && "Congratulations, You won!"}</h3>
         </div>
     )
