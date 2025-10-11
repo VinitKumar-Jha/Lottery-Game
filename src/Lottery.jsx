@@ -4,17 +4,21 @@ import { genTicket, sum } from "./helper"
 
 export default function Lottery() {
 
-    let [tickets, setTickets] = useState(genTicket(3));
-    let isWinning = sum(tickets) === 15;
+    let [ticket, setTicket] = useState(genTicket(3));
+    let isWinning = sum(ticket) === 15;
+
+    let buyTicket = () => {
+        setTicket(genTicket(3));
+    }
     return (
         <div>
             <h2>Lottery Game!</h2>
             <div className="tickets">
-                <span>{tickets[0]}</span>
-                <span>{tickets[1]}</span>
-                <span>{tickets[2]}</span>
+                <span>{ticket[0]}</span>
+                <span>{ticket[1]}</span>
+                <span>{ticket[2]}</span>
             </div>
-            
+            <button onClick={buyTicket}>Buy New Ticket</button>
             <h3>{isWinning && "Congratulations, You won!"}</h3>
         </div>
     )
