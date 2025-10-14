@@ -7,7 +7,10 @@ function App() {
   return (
     <>
       {/* <Lottery /> */}
-      <Ticket ticket={[0, 1, 2]} />
+      <Ticket ticket={[0, 1, 2]} />   
+       <Ticket ticket={[0, 1, 2, 4, 5]} />
+
+
     </>
   )
 }
