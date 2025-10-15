@@ -1,6 +1,6 @@
-import Lottery from "./Lottery"
+import Lottery from "./Lottery/Lottery"
 import './App.css'
-import {sum} from "./helper"
+import { sum } from "./Lottery/helper"
 
 function App() {
 
