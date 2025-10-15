@@ -10,7 +10,7 @@ function App() {
     // return ticket.every((num)=> {
     //   num === ticket[0];
     // })
-    return ticket[0] === 0;
+
   }
   return (
     <>
