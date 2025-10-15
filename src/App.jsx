@@ -3,9 +3,13 @@ import './App.css'
 
 function App() {
 
+
+  let winCondition = (ticket) => {
+    return ticket[0] === 0;
+  }
   return (
     <>
-      <Lottery n={4} winningSum={15} />
+      <Lottery n={3} winCondition={winCondition} />
     </>
   )
 }
