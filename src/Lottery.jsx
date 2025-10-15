@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { genTicket, sum } from "./helper"
+import { genTicket, sum } from "../helper"
 import Ticket from "../Ticket";
 import Button from "./Button";
 
